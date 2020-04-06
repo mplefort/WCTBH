@@ -1,0 +1,62 @@
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+$background: #ff9800;
+$background-light: #ffc947;
+$background-dark: #c66900;
+$background-black: #000;
+$western-font: 'Special Elite', cursive;
+
+@mixin easeOut {
+	// what to change (properties within this class), time, motion type
+	transition: all 0.25s ease-out;
+}
+
+$theme-colors: (
+	'primary': $background-light,
+	'secondary': $background-dark,
+);
+
+body {
+	background: $background-dark;
+	font-family: $font-family-sans-serif;
+}
+.navbar-brand {
+	img {
+		width: 150px;
+		height: auto;
+	}
+}
+
+.navbar-custom {
+	background-color: $background-light;
+	color: #000;
+}
+
+.navbar-nav .nav-item {
+	font-family: $western-font;
+	font-size: 1rem;
+	font-weight: 500;
+
+	a {
+		color: #000;
+		&:hover {
+			// color: $background-light;
+			font-weight: 900;
+			color: $background-dark;
+			font-size: 1.1rem;
+			@include easeOut();
+		}
+	}
+}
+
+/* Set the border color */
+
+.navbar-toggler.custom-toggler {
+	border-color: $background-dark;
+}
+
+/* Setting the stroke to green using rgb values (0, 128, 0) */
+
+.fa-compass {
+	color: $background-dark;
+}

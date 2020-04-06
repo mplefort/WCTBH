@@ -1,24 +1,45 @@
 {
-  "name": "wctbh",
-  "version": "1.0.0",
-  "description": "winecountrytrailsbyhorseback website",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mplefort/WCTBH.git"
-  },
-  "keywords": [
-    "website",
-    "bootstrap",
-    "horseback"
-  ],
-  "author": "Matt LeFort",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mplefort/WCTBH/issues"
-  },
-  "homepage": "https://github.com/mplefort/WCTBH#readme"
+	"name": "wctbh",
+	"version": "1.0.0",
+	"description": "winecountrytrailsbyhorseback website",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/mplefort/WCTBH.git"
+	},
+	"keywords": [
+		"website",
+		"bootstrap",
+		"horseback"
+	],
+	"author": "Matt LeFort",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/mplefort/WCTBH/issues"
+	},
+	"homepage": "https://github.com/mplefort/WCTBH#readme",
+	"dependencies": {
+		"@fortawesome/fontawesome-free": "^5.13.0",
+		"bootstrap": "^4.4.1",
+		"bootstrap-social": "^5.1.1",
+		"font-awesome": "^4.7.0",
+		"jquery": "^3.4.1",
+		"modernizr": "^3.9.1",
+		"popper": "^1.0.1",
+		"popper.js": "^1.16.1"
+	},
+	"devDependencies": {
+		"parcel-plugin-static-files-copy": "^2.3.1"
+	},
+	"staticFiles": {
+		"staticPath": [
+			{
+				"staticPath": "img",
+				"staticOutDir": "img"
+			}
+		]
+	}
 }
