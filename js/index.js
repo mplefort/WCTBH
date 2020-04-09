@@ -1,6 +1,6 @@
-import $ from 'jquery';
+import jQuery from 'jquery';
+window.$ = window.jQuery = jQuery; // workaround for https://github.com/parcel-bundler/parcel/issues/333
 import popper from 'popper.js';
-import bootstrap from 'bootstrap';
 
 const numberImages = 13;
 

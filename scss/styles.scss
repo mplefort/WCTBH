@@ -1,41 +1,37 @@
-@import '../node_modules/bootstrap/scss/bootstrap';
-
-$background: #ff9800;
-$background-light: #ffc947;
-$background-dark: #c66900;
-$background-black: #000;
-$western-font: 'Special Elite', cursive;
+@import 'customVariables';
+@import 'custom';
+// @import '../node_modules/bootstrap/scss/bootstrap';
 
 @mixin easeOut {
 	// what to change (properties within this class), time, motion type
 	transition: all 0.25s ease-out;
 }
 
-$theme-colors: (
-	'primary': $background-light,
-	'secondary': $background-dark,
-);
-
 body {
 	background: $background-dark;
 	font-family: $font-family-sans-serif;
+	// overflow: hidden;
+	// max-width: 1200px;
 }
-.navbar-brand {
-	img {
-		width: 150px;
-		height: auto;
+
+.navbar {
+	.navbar-brand {
+		img {
+			width: 150px;
+			height: auto;
+		}
 	}
-}
 
-.navbar-custom {
-	background-color: $background-light;
-	color: #000;
-}
+	&.navbar-custom {
+		background-color: $background-light;
+		color: #000;
+	}
 
-.navbar-nav .nav-item {
-	font-family: $western-font;
-	font-size: 1rem;
-	font-weight: 500;
+	.navbar-nav .nav-item {
+		font-family: $western-font;
+		font-size: 1rem;
+		font-weight: 500;
+	}
 
 	a {
 		color: #000;
@@ -47,16 +43,131 @@ body {
 			@include easeOut();
 		}
 	}
+
+	.navbar-toggler.custom-toggler {
+		border-color: $background-dark;
+	}
+	.fa-compass {
+		color: $background-dark;
+	}
+
+	button {
+		&:focus {
+			// outline: 5px auto -webkit-focus-ring-color;
+			outline-color: $background-dark;
+			outline-style: auto;
+			outline-width: 5px;
+		}
+	}
 }
 
-/* Set the border color */
+// Carousel
+.carousel {
+	// margin: 0 auto;
+	// min-width: 500px;
+	// overflow: hidden;
+	// min-height: 300px;
 
-.navbar-toggler.custom-toggler {
-	border-color: $background-dark;
+	.carousel-inner {
+		// width: 100%;
+		.carousel-item {
+			// min-width: 500px;
+			// overflow: hidden;
+			// height: 100%;
+
+			img {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				width: 100%;
+			}
+		}
+	}
+}
+.map iframe {
+	width: 50%;
+	float: left;
 }
 
-/* Setting the stroke to green using rgb values (0, 128, 0) */
-
-.fa-compass {
-	color: $background-dark;
+@include media-breakpoint-down(xs) {
 }
+@include media-breakpoint-down(sm) {
+	// // Carousel
+	// .carousel {
+	// 	// background: red;
+	// 	.carousel-inner {
+	// 		// background: red;
+	// 		.carousel-item {
+	// 			img {
+	// 				// position: absolute;
+	// 				width: auto;
+	// 				height: 100%;
+	// 			}
+	// 		}
+	// 	}
+	// }
+}
+@include media-breakpoint-down(md) {
+}
+
+@include media-breakpoint-down(lg) {
+}
+@include media-breakpoint-down(xl) {
+}
+
+@include media-breakpoint-up(xs) {
+}
+@include media-breakpoint-up(sm) {
+}
+@include media-breakpoint-up(md) {
+	.carousel {
+		display: flex;
+		height: 75vh;
+		.carousel-inner {
+			// width: 100%;
+			.carousel-item {
+				// min-width: 500px;
+				// overflow: hidden;
+				// height: 100%;
+
+				img {
+					max-width: 1200px;
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(lg) {
+}
+@include media-breakpoint-up(xl) {
+}
+
+// // Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) {
+// }
+
+// // Medium devices (tablets, 768px and up)
+// @media (min-width: 768px) {
+// 	// Carousel
+// 	.carousel {
+// 		background: red;
+// 		.carousel-inner {
+// 			background: red;
+// 			.carousel-item {
+// 				img {
+// 					width: auto;
+// 					height: 100%;
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+
+// // Large devices (desktops, 992px and up)
+// @media (min-width: 992px) {
+// }
+
+// // Extra large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) {
+// }

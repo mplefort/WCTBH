@@ -16,12 +16,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="horseback, horse, pony, temecula, tour, excursion, winery, wine, winecountry, country,
   Maurrice, Carrie, MaurriceCarrie, WilsonCreek">
-  <script type="application/javascript">
+  <!-- <script type="application/javascript">
     addEventListener("load", function () {
       setTimeout(hideURLbar, 0);
     }, false);
     function hideURLbar() { window.scrollTo(0, 1); } 
-  </script>
+  </script> -->
 
   <!-- bootstrap -->
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
@@ -45,31 +45,28 @@
 <body>
 
   <!-- Nav: Home, Location/Times, About Us, Packages -->
+  <!-- https://getbootstrap.com/docs/4.0/components/scrollspy/ -->
   <div class="header" id="home">
     <!--Top-Bar-->
     <nav class="navbar navbar-expand-md navbar-custom sticky-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-          <img src="./img/logos/logo_full.png" class="" alt="Logo">
-        </a>
-        <button type="button" class="navbar-toggler ml-auto custom-toggler" data-toggle="collapse"
-          data-target="#bsNavbarToggler">
-          <span class="sr-only">Toggle navigation</span>
-          <span><i class="fas fa-compass"></i></span>
-          <!-- <span class="navbar-toggler-icon"></span> -->
-        </button>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bsNavbarToggler">
-          <ul class="navbar-nav ml-auto">
-            <!-- nav-fill w-100 -->
-            <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
-            <li class="nav-item"><a href="#packages" class="nav-link">Packages</a></li>
-            <li class="nav-item"><a href="#locations" class="nav-link">Locations</a></li>
-            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-          </ul>
-        </div>
+      <a class="navbar-brand" href="#">
+        <img src="./img/logos/logo_full.png" class="" alt="Logo">
+      </a>
+      <button type="button" class="navbar-toggler custom-toggler" data-toggle="collapse" data-target="#bsNavbarToggler">
+        <span class="sr-only">Toggle navigation</span>
+        <span><i class="fas fa-compass"></i></span>
+        <!-- <span class="navbar-toggler-icon"></span> -->
+      </button>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bsNavbarToggler">
+        <ul class="navbar-nav ml-auto">
+          <!-- nav-fill w-100 -->
+          <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li class="nav-item"><a href="#packages" class="nav-link">Packages</a></li>
+          <li class="nav-item"><a href="#location-contact" class="nav-link">Locations & contact</a></li>
+        </ul>
       </div>
     </nav>
     <!-- Showcase: few slides,  -->
@@ -82,13 +79,13 @@
       </ul>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="img/showcase_slides/15.png" class="d-block w-100" alt="Girl on Horse">
+          <img src="img/showcase_slides/15.png" alt="Girl on Horse">
         </div>
         <div class="carousel-item">
-          <img src="img/showcase_slides/7.png" class="d-block w-100" alt="Girl on Horse">
+          <img src="img/showcase_slides/7.png" alt="Girl on Horse">
         </div>
         <div class="carousel-item">
-          <img src="img/showcase_slides/13.png" class="d-block w-100" alt="Group on horseback">
+          <img src="img/showcase_slides/13.png" alt="Group on horseback">
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
@@ -167,11 +164,6 @@
       <div class="row my-0" id="gallery-items">
       </div>
     </div>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/index.js"></script>
 
 
     <!-- Packages -->
@@ -180,7 +172,7 @@
         <h3 class="display-3">Packages</h3>
       </div>
       <div class="card-deck row justify-content-around">
-        <div class="col-sm-6 col-lg-4" id="package-ride-wine-tour">
+        <div class="col-md-6 col-lg-4 py-1" id="package-ride-wine-tour">
           <div class="card px-1">
             <div class="row justify-content-around">
               <div class="col-6 py-1">
@@ -233,12 +225,23 @@
                 </tbody>
               </table>
               <p><em>*Due to liability and rider safety, min rider age is 7.</em></p>
+
+              <div class="row">
+                <div class="col-sm-6">
+                  <a class="btn btn-primary btn-block"
+                    href="https://bookeo.com/winecountrytrails?type=214CLAF43151C6CA0FF4">Reserve
+                    Online!</a>
+                </div>
+                <div class="col-sm-6">
+                  <a href="tel:951-506-8706" class="btn btn-primary btn-block">Call Us! <br /> 951.506.8706</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <!-- Packages:  -->
-        <div class="col-sm-6 col-lg-4" id="package-sunset-tour">
-          <div class="card px-1">
+        <div class="col-md-6 col-lg-4 py-1" id="package-sunset-tour">
+          <div class="card px-1 ">
             <div class="row justify-content-around">
               <div class="col-6 py-1">
                 <img src="img\packages\sunset\1_250x250.png" class="card-img-top" alt="horseback riding">
@@ -285,10 +288,20 @@
                 </tbody>
               </table>
               <p><em>*Due to liability and rider safety, min rider age is 7.</em></p>
+              <div class="row">
+                <div class="col-sm-6">
+                  <a href="https://bookeo.com/winecountrytrails?type=21437XRUP151C756890D"
+                    class="btn btn-primary btn-block">Reserve
+                    Online!</a>
+                </div>
+                <div class="col-sm-6">
+                  <a href="tel:951-506-8706" class="btn btn-primary btn-block">Call Us! <br /> 951.506.8706</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-sm-6 col-lg-4" id="packages-special-occasion">
+        <div class="col-md-6 col-lg-4 py-1" id="packages-special-occasion">
           <div class="card px-1">
             <div class="row justify-content-around">
               <div class="col-6 py-1">
@@ -310,6 +323,8 @@
                 College Reunions.</p>
               <p class="card-text"> For a Private or Group ride please call 951-506-8706 for pricing and planning.</p>
 
+              <a href="tel:951-506-8706" class="btn btn-primary btn-block">Call Us! <br /> 951.506.8706</a>
+
             </div>
           </div>
         </div>
@@ -317,8 +332,68 @@
       </div>
     </div>
     <!-- Location -->
+    <div class="container-fluid" id="location-contact">
+      <div class="location-contact-head">
+        <h3 class="display-3">Location</h3>
+        <h4><a class="display-4" href="https://www.mauricecarriewinery.com/">Maurice Car'rie Winery</a></h4>
+      </div>
+      <div class="row justify-content-around">
+        <div class="col-md-6">
+          <h3 class="display-5">Contact Us</h3>
+          <hr>
+          <p>A romantic and relaxing experience through beautiful vineyards with stunning views and rich history.
+            <br />
+            We are located just east of Maurice Car'rie Winery and can be easily found by our signage, tents, and
+            saddled horses. When entering the lot of the winery make a left turn to park near the horses and guest
+            area.
+          </p>
+          <div class="text-right">
+            <p class="sub">34225 Rancho California Rd, Temecula, CA 92591<i class="fas fa-map-marker-alt"></i></p>
+            <p class="sub">Office: Mon-Fri : 9am - 5pm -- Tours : 9am - Dusk Wed - Sun <i
+                class="fas fa-map-marker-alt"></i></p>
+            <p class="add"><span>Tel :</span> 951.506-8706 <i class="fas fa-phone"></i></p>
+            <p class="add"><span>Email :</span> <a class="mail"
+                href="mailto:info@winecountrytrailsbyhorseback.com">info&commat;winecountrytrailsbyhorseback.com</a><i
+                class="fas fa-envelope"></i></p>
 
-    <!-- Contact -->
+          </div>
+        </div>
+        <div class="col-md-6 align-self-center" id="location-map">
+          <div class="map d-flex justify-content-center flex-grow-1">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.9823438153503!2d-117.06776464890899!3d33.52784468065751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80db7911dadd0271%3A0xfdb8785adc474eff!2sWine%20Country%20Trails%20by%20Horseback!5e0!3m2!1sen!2sus!4v1586369288521!5m2!1sen!2sus"
+              frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //subscribe -->
+    <!-- Footer -->
+    <footer class="page-footer font-small">
+
+      <div class="W3-footer-grids">
+        <div class="col-md-6 footer-left-icons">
+          <ul>
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+          </ul>
+
+          <div class="clearfix"></div>
+        </div>
+      </div>
+
+      <!-- copyright -->
+      <div class="footer-copyright text-center">
+        <p> Copyright &copy; 2015 Wine Country Trails by Horseback. All rights reserved.</p>
+      </div>
+
+
+      <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+      <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+      <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+      <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script src="./js/index.js"></script>
+
 </body>
 
 </html>

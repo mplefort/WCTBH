@@ -1,0 +1,12 @@
+$background: #ff9800;
+$background-light: #ffc947;
+$background-dark: #c66900;
+$background-black: #000;
+$western-font: 'Special Elite', cursive;
+
+$theme-colors: (
+	'primary': $background-light,
+	'secondary': $background-dark,
+);
+
+@import '../node_modules/bootstrap/scss/bootstrap';

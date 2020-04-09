@@ -4,6 +4,7 @@
 	"description": "winecountrytrailsbyhorseback website",
 	"main": "index.js",
 	"scripts": {
+		"start": "parcel index.html",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"repository": {
@@ -22,17 +23,19 @@
 	},
 	"homepage": "https://github.com/mplefort/WCTBH#readme",
 	"dependencies": {
-		"@fortawesome/fontawesome-free": "^5.13.0",
 		"bootstrap": "^4.4.1",
 		"bootstrap-social": "^5.1.1",
 		"font-awesome": "^4.7.0",
 		"jquery": "^3.4.1",
 		"modernizr": "^3.9.1",
 		"popper": "^1.0.1",
-		"popper.js": "^1.16.1"
+		"popper.js": "^1.16.1",
+		"scss": "^0.2.4"
 	},
 	"devDependencies": {
-		"parcel-plugin-static-files-copy": "^2.3.1"
+		"@fortawesome/fontawesome-free": "^5.13.0",
+		"parcel-plugin-static-files-copy": "^2.3.1",
+		"sass": "^1.26.3"
 	},
 	"staticFiles": {
 		"staticPath": [
