@@ -3,10 +3,13 @@ $background-light: #ffc947;
 $background-dark: #c66900;
 $background-black: #000;
 $western-font: 'Special Elite', cursive;
+$display-font: 'Lato', sans-serif;
+$standard-font: 'Raleway', sans-serif;
+$fancy-font: 'Great Vibes', cursive;
 
 $theme-colors: (
-	'primary': $background-light,
-	'secondary': $background-dark,
+  'primary': $background-light,
+  'secondary': $background-dark,
 );
 
 @import '../node_modules/bootstrap/scss/bootstrap';

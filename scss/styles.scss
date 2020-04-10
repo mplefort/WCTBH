@@ -3,115 +3,180 @@
 // @import '../node_modules/bootstrap/scss/bootstrap';
 
 @mixin easeOut {
-	// what to change (properties within this class), time, motion type
-	transition: all 0.25s ease-out;
+  // what to change (properties within this class), time, motion type
+  transition: all 0.25s ease-out;
 }
 
 body {
-	background: $background-dark;
-	font-family: $font-family-sans-serif;
-	// overflow: hidden;
-	// max-width: 1200px;
+  background: $background-dark;
+  font-family: $standard-font, $font-family-sans-serif;
+  // overflow: hidden;
+  // max-width: 1200px;
 }
 
 .navbar {
-	.navbar-brand {
-		img {
-			width: 150px;
-			height: auto;
-		}
-	}
+  .navbar-brand {
+    img {
+      width: 150px;
+      height: auto;
+    }
+  }
 
-	&.navbar-custom {
-		background-color: $background-light;
-		color: #000;
-	}
+  &.navbar-custom {
+    background-color: $background-light;
+    color: #000;
+  }
 
-	.navbar-nav .nav-item {
-		font-family: $western-font;
-		font-size: 1rem;
-		font-weight: 500;
-	}
+  .navbar-nav .nav-item {
+    font-family: $western-font;
+    font-size: 1rem;
+    font-weight: 500;
+  }
 
-	a {
-		color: #000;
-		&:hover {
-			// color: $background-light;
-			font-weight: 900;
-			color: $background-dark;
-			font-size: 1.1rem;
-			@include easeOut();
-		}
-	}
+  a {
+    color: #000;
+    &:hover {
+      // color: $background-light;
+      font-weight: 900;
+      color: $background-dark;
+      font-size: 1.1rem;
+      @include easeOut();
+    }
+  }
 
-	.navbar-toggler.custom-toggler {
-		border-color: $background-dark;
-	}
-	.fa-compass {
-		color: $background-dark;
-	}
+  .navbar-toggler.custom-toggler {
+    border-color: $background-dark;
+  }
+  .fa-compass {
+    color: $background-dark;
+  }
 
-	button {
-		&:focus {
-			// outline: 5px auto -webkit-focus-ring-color;
-			outline-color: $background-dark;
-			outline-style: auto;
-			outline-width: 5px;
-		}
-	}
+  button {
+    &:focus {
+      // outline: 5px auto -webkit-focus-ring-color;
+      outline-color: $background-dark;
+      outline-style: auto;
+      outline-width: 5px;
+    }
+  }
 }
 
-// Carousel
-.carousel {
-	// margin: 0 auto;
-	// min-width: 500px;
-	// overflow: hidden;
-	// min-height: 300px;
-
-	.carousel-inner {
-		// width: 100%;
-		.carousel-item {
-			// min-width: 500px;
-			// overflow: hidden;
-			// height: 100%;
-
-			img {
-				display: block;
-				margin-left: auto;
-				margin-right: auto;
-				width: 100%;
-			}
-		}
-	}
+.carousel .carousel-inner {
+  // height: 50vh;
+  #carousel-img-1 {
+    background: url(../../img/showcase_slides/15.png);
+    background-position: center top;
+    /* show entire photo */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
+  }
+  #carousel-img-2 {
+    background: url(../../img/showcase_slides/7.png);
+    background-position: center;
+    /* show entire photo */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
+  }
+  #carousel-img-3 {
+    background: url(../../img/showcase_slides/13.png);
+    background-position: center;
+    /* show entire photo */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
+  }
 }
+
+#jumbotron {
+  position: absolute;
+  top: 45vh;
+  height: 175px;
+  width: 80vw;
+  z-index: 1;
+  padding: 0.25rem 0;
+
+  .row {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  // background: $background-light;
+  background-color: rgba(233, 236, 239, 0.75);
+  .display-4 {
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: $display-font;
+  }
+  .display-2 {
+    font-size: 3rem;
+    font-weight: 300;
+    font-family: $display-font;
+    sup {
+      display: inline-block;
+      padding: 0 10px 0 0;
+      transform: rotate(-10deg);
+      font-family: $fancy-font;
+    }
+    .text-primary {
+      text-shadow: #000000 1px 1px 15px;
+    }
+  }
+  .btn {
+    margin: 0 0 0.5rem 0;
+  }
+}
+
 .map iframe {
-	width: 50%;
-	float: left;
+  width: 50%;
+  float: left;
 }
 
 @include media-breakpoint-down(xs) {
 }
+
+// // Small devices (landscape phones, 576px and up)
 @include media-breakpoint-down(sm) {
-	// // Carousel
-	// .carousel {
-	// 	// background: red;
-	// 	.carousel-inner {
-	// 		// background: red;
-	// 		.carousel-item {
-	// 			img {
-	// 				// position: absolute;
-	// 				width: auto;
-	// 				height: 100%;
-	// 			}
-	// 		}
-	// 	}
-	// }
-}
-@include media-breakpoint-down(md) {
+  // // Carousel
+  // .carousel {
+  // 	// background: red;
+  // 	.carousel-inner {
+  // 		// background: red;
+  // 		.carousel-item {
+  // 			img {
+  // 				// position: absolute;
+  // 				width: auto;
+  // 				height: 100%;
+  // 			}
+  // 		}
+  // 	}
+  // }
 }
 
+// // Medium devices (tablets, 768px and up)
+@include media-breakpoint-down(md) {
+  #jumbotron {
+    width: 60vh;
+    z-index: 1;
+
+    // background: $background-light;
+    background-color: rgba(233, 236, 239, 0.75);
+    .display-4 {
+      display: none;
+    }
+    .display-2 {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+// // Large devices (desktops, 992px and up)
 @include media-breakpoint-down(lg) {
 }
+
+// // Extra large devices (large desktops, 1200px and up)
 @include media-breakpoint-down(xl) {
 }
 
@@ -120,22 +185,6 @@ body {
 @include media-breakpoint-up(sm) {
 }
 @include media-breakpoint-up(md) {
-	.carousel {
-		display: flex;
-		height: 75vh;
-		.carousel-inner {
-			// width: 100%;
-			.carousel-item {
-				// min-width: 500px;
-				// overflow: hidden;
-				// height: 100%;
-
-				img {
-					max-width: 1200px;
-				}
-			}
-		}
-	}
 }
 
 @include media-breakpoint-up(lg) {
@@ -143,11 +192,9 @@ body {
 @include media-breakpoint-up(xl) {
 }
 
-// // Small devices (landscape phones, 576px and up)
 // @media (min-width: 576px) {
 // }
 
-// // Medium devices (tablets, 768px and up)
 // @media (min-width: 768px) {
 // 	// Carousel
 // 	.carousel {
@@ -164,10 +211,8 @@ body {
 // 	}
 // }
 
-// // Large devices (desktops, 992px and up)
 // @media (min-width: 992px) {
 // }
 
-// // Extra large devices (large desktops, 1200px and up)
 // @media (min-width: 1200px) {
 // }
