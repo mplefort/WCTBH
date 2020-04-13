@@ -61,34 +61,61 @@ body {
   }
 }
 
-.carousel .carousel-inner {
-  // height: 50vh;
-  #carousel-img-1 {
-    background: url(../../img/showcase_slides/15.png);
-    background-position: center top;
-    /* show entire photo */
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 60vh;
+.carousel {
+  .carousel-inner {
+    max-width: 1200px;
+    margin: auto;
+
+    #carousel-img-1 {
+      background: url(../../img/showcase_slides/15.png);
+      background-position: center top;
+      /* show entire photo */
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 60vh;
+    }
+    #carousel-img-2 {
+      background: url(../../img/showcase_slides/7.png);
+      background-position: center;
+      /* show entire photo */
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 60vh;
+    }
+    #carousel-img-3 {
+      background: url(../../img/showcase_slides/13.png);
+      background-position: center;
+      /* show entire photo */
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 60vh;
+    }
   }
-  #carousel-img-2 {
-    background: url(../../img/showcase_slides/7.png);
-    background-position: center;
-    /* show entire photo */
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 60vh;
+
+  .arrow {
+    font-size: 2rem;
+    color: $background-light;
   }
-  #carousel-img-3 {
-    background: url(../../img/showcase_slides/13.png);
-    background-position: center;
-    /* show entire photo */
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 60vh;
+
+  .carousel-indicators {
+    position: absolute;
+    top: 0;
+    left: 0;
+    li {
+      background: transparent;
+      width: 50px;
+
+      .fa-hat-cowboy-side {
+        text-indent: 0px;
+        height: 50px;
+        width: 50px;
+        font-size: 2rem;
+        display: block;
+        color: $background-dark;
+      }
+    }
   }
 }
-
 #jumbotron {
   position: absolute;
   top: 45vh;
@@ -96,7 +123,7 @@ body {
   width: 80vw;
   z-index: 1;
   padding: 0.25rem 0;
-
+  max-width: 1200px;
   .row {
     height: 100%;
     position: absolute;
@@ -126,6 +153,18 @@ body {
   }
   .btn {
     margin: 0 0 0.5rem 0;
+  }
+}
+
+#gallery {
+  .gallery-head {
+    text-shadow: 1px 1px 15px black;
+  }
+}
+
+#packages {
+  .packages-head {
+    text-shadow: 1px 1px 15px black;
   }
 }
 
