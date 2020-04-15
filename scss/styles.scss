@@ -161,6 +161,17 @@ body {
   .gallery-head {
     text-shadow: 1px 1px 15px black;
   }
+
+  .gallery-item {
+    /* On hover, add a black background color with a little bit see-through */
+    img {
+      &:hover {
+        cursor: pointer;
+        opacity: 0.6;
+        transition: 0.35s ease-in-out;
+      }
+    }
+  }
 }
 
 #packages {
