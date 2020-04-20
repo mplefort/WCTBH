@@ -1,0 +1,2 @@
+(window.lsWebpackJsonp=window.lsWebpackJsonp||[]).push([[19],{59:function(n,e){var o,t;o=document.getElementById("country-link-container"),t=document.getElementById("country-link-dropdown"),o&&t&&o.addEventListener("click",(function(){t.style.display="none"===t.style.display?"block":"none",t.style.userSelect="none"}))}}]);
+//# sourceMappingURL=desktop-footer-58a67c6a675d.js.map

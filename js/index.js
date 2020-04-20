@@ -10,7 +10,7 @@ for (i = 1; i < numberImages; i++) {
   imagesHTML = imagesHTML.concat(`
   <div class="col-6 col-sm-4 col-md-3 gallery-item p-0 m-0">
     <figure class="my-0">
-      <img src="/img/slides/${i}.png" alt="Horseback rides" class="img-fluid hover-shadow" onclick="openModal();currentSlide(${1})">
+      <img src="/img/slides/${i}.png" alt="Horseback rides" class="img-fluid hover-shadow" onclick="openModal();currentSlide(${i})">
     </figure>
   </div>`);
 }
