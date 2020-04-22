@@ -70,7 +70,7 @@ body {
     margin: auto;
 
     #carousel-img-1 {
-      background: url(../../img/showcase_slides/15.png);
+      background: url(../img/showcase_slides/15.png);
       background-position: center top;
       /* show entire photo */
       background-size: cover;
@@ -78,7 +78,7 @@ body {
       height: 60vh;
     }
     #carousel-img-2 {
-      background: url(../../img/showcase_slides/7.png);
+      background: url(../img/showcase_slides/7.png);
       background-position: center;
       /* show entire photo */
       background-size: cover;
@@ -86,7 +86,7 @@ body {
       height: 60vh;
     }
     #carousel-img-3 {
-      background: url(../../img/showcase_slides/13.png);
+      background: url(../img/showcase_slides/13.png);
       background-position: center;
       /* show entire photo */
       background-size: cover;
@@ -210,8 +210,6 @@ body {
   i {
     color: $background-dark;
     font-size: 1.5rem;
-  }
-  .card {
   }
 }
 

@@ -2,8 +2,8 @@ node_modules/
 
 snow_tour-web_ex/
 
-dist/
-
 .cache/
 
 .vscode/
+
+development/

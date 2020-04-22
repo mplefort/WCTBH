@@ -1,48 +1,54 @@
 {
-	"name": "wctbh",
-	"version": "1.0.0",
-	"description": "winecountrytrailsbyhorseback website",
-	"main": "index.js",
-	"scripts": {
-		"start": "parcel index.html",
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/mplefort/WCTBH.git"
-	},
-	"keywords": [
-		"website",
-		"bootstrap",
-		"horseback"
-	],
-	"author": "Matt LeFort",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/mplefort/WCTBH/issues"
-	},
-	"homepage": "https://github.com/mplefort/WCTBH#readme",
-	"dependencies": {
-		"bootstrap": "^4.4.1",
-		"bootstrap-social": "^5.1.1",
-		"font-awesome": "^4.7.0",
-		"jquery": "^3.4.1",
-		"modernizr": "^3.9.1",
-		"popper": "^1.0.1",
-		"popper.js": "^1.16.1",
-		"scss": "^0.2.4"
-	},
-	"devDependencies": {
-		"@fortawesome/fontawesome-free": "^5.13.0",
-		"parcel-plugin-static-files-copy": "^2.3.1",
-		"sass": "^1.26.3"
-	},
-	"staticFiles": {
-		"staticPath": [
-			{
-				"staticPath": "img",
-				"staticOutDir": "img"
-			}
-		]
-	}
+  "name": "wctbh",
+  "version": "1.0.0",
+  "description": "winecountrytrailsbyhorseback website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run clean && parcel index.html --out-dir development -p 1234",
+    "build": "parcel build index.html --out-dir dist --public-url ./",
+    "clean": "rimraf ./development && rimraf -rf ./.cache"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mplefort/WCTBH.git"
+  },
+  "keywords": [
+    "website",
+    "bootstrap",
+    "horseback"
+  ],
+  "author": "Matt LeFort",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mplefort/WCTBH/issues"
+  },
+  "homepage": "https://github.com/mplefort/WCTBH#readme",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "bootstrap-social": "^5.1.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.4.1",
+    "modernizr": "^3.9.1",
+    "popper": "^1.0.1",
+    "popper.js": "^1.16.1",
+    "scss": "^0.2.4"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
+    "cssnano": "^4.1.10",
+    "parcel-plugin-static-files-copy": "^2.3.1",
+    "sass": "^1.26.3",
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/runtime-corejs2": "^7.9.2",
+    "rimraf": "^3.0.2"
+  },
+  "staticFiles": {
+    "staticPath": [
+      {
+        "staticPath": "img",
+        "staticOutDir": "img"
+      }
+    ]
+  }
 }
