@@ -93,6 +93,14 @@ body {
       background-repeat: no-repeat;
       height: 60vh;
     }
+    #carousel-img-4 {
+      background: url(../img/showcase_slides/16.jpg);
+      background-position: center;
+      /* show entire photo */
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 60vh;
+    }
   }
 
   .arrow {
